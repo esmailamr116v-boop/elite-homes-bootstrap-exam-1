@@ -1,0 +1,629 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteHomes</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">EliteHomes</a>
+
+        <div class="navbar-nav ms-auto align-items-center">
+            <a class="nav-link active" href="#home">Home</a>
+            <a class="nav-link" href="#properties">Properties</a>
+            <a class="nav-link" href="#services">Services</a>
+            <a class="nav-link" href="#testimonials">Testimonials</a>
+            <a class="nav-link" href="#faq">FAQ</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </div>
+    </div>
+</nav>
+
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+    <div class="container text-center">
+
+        <h1>Find Your Dream Home</h1>
+
+        <p class="hero-text">
+            Discover exceptional properties in prime locations.
+            From modern condos to luxury estates, we help you
+            find the perfect place to call home.
+        </p>
+
+        <!-- SEARCH FORM -->
+        <div class="search-box text-start">
+            <div class="row g-3">
+
+                <div class="col-lg-4 col-md-6">
+                    <label class="form-label">Location</label>
+                    <input type="text" class="form-control"
+                        placeholder="Enter city, neighborhood, or ZIP code">
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <label class="form-label">Property Type</label>
+                    <select class="form-select">
+                        <option>All Types</option>
+                        <option>House</option>
+                        <option>Apartment</option>
+                        <option>Villa</option>
+                    </select>
+                </div>
+
+                <div class="col-lg-2 col-md-6">
+                    <label class="form-label">Price Range</label>
+                    <select class="form-select">
+                        <option>Any Price</option>
+                        <option>$100,000</option>
+                        <option>$500,000</option>
+                        <option>$1,000,000</option>
+                    </select>
+                </div>
+
+                <div class="col-lg-1 col-md-6">
+                    <label class="form-label">Beds</label>
+                    <select class="form-select">
+                        <option>Any</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4+</option>
+                    </select>
+                </div>
+
+                <div class="col-lg-1 col-md-6">
+                    <label class="form-label">Baths</label>
+                    <select class="form-select">
+                        <option>Any</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3+</option>
+                    </select>
+                </div>
+
+                <div class="col-lg-1 col-md-6">
+                    <label class="form-label">Min Sq Ft</label>
+                    <input type="number" class="form-control" placeholder="1000">
+                </div>
+
+                <div class="col-lg-1 col-md-6">
+                    <label class="form-label">Max Sq Ft</label>
+                    <input type="number" class="form-control" placeholder="5000">
+                </div>
+
+                <div class="col-12">
+                    <button class="btn search-btn w-100">
+                        <i class="bi bi-search"></i>
+                        Search Properties
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- STATISTICS -->
+        <div class="row stats mt-5">
+
+            <div class="col-6 col-md-3">
+                <h3>15,000+</h3>
+                <p>Active Listings</p>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <h3>98%</h3>
+                <p>Client Satisfaction</p>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <h3>500+</h3>
+                <p>Expert Agents</p>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <h3>25</h3>
+                <p>Years Experience</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- FEATURED PROPERTIES -->
+<section class="section-padding" id="properties">
+    <div class="container">
+
+        <div class="section-heading text-center">
+            <span class="small-title">PREMIUM COLLECTION</span>
+            <h2>Featured Properties</h2>
+            <p>
+                Discover our handpicked selection of premium properties
+                in the most desirable locations.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <!-- PROPERTY 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="property-card">
+
+                    <div class="property-image">
+                        <img src="./Images/featured-properties-img-1.png"
+                            alt="Modern luxury house">
+
+                        <span class="property-badge">Featured</span>
+
+                        <div class="favorite-btn">
+                            <i class="bi bi-heart"></i>
+                        </div>
+
+                        <span class="photo-count">
+                            <i class="bi bi-camera-fill"></i> 24 Photos
+                        </span>
+                    </div>
+
+                    <div class="property-info">
+                        <div class="property-price"><h4>$2,850,000</h4><span class="old-price">$3,000,000</span><span class="discount-tag">5% OFF</span></div>
+                        <p>4 beds • 3.5 baths • 6,720 sqft</p>
+                        <h6>Modern Luxury Estate</h6>
+                        <p>1234 Beverly Hills Drive, Beverly Hills, CA</p>
+
+                        <div class="property-bottom">
+                            <span><i class="bi bi-person-circle"></i> John Mitchell</span>
+                            <a href="#contact" class="btn tour-btn">Schedule Tour</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- PROPERTY 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="property-card">
+
+                    <div class="property-image">
+                        <img src="./Images/featured-properties-img-2.png"
+                            alt="Luxury penthouse">
+
+                        <span class="property-badge green">New Listing</span>
+
+                        <div class="favorite-btn">
+                            <i class="bi bi-heart"></i>
+                        </div>
+
+                        <span class="photo-count">
+                            <i class="bi bi-camera-fill"></i> 18 Photos
+                        </span>
+                    </div>
+
+                    <div class="property-info">
+                        <div class="property-price"><h4>$1,425,000</h4><span class="old-price">$1,500,000</span><span class="discount-tag">5% OFF</span></div>
+                        <p>3 beds • 2.5 baths • 2,192 sqft</p>
+                        <h6>Downtown Penthouse</h6>
+                        <p>789 Metropolitan Ave, New York, NY</p>
+
+                        <div class="property-bottom">
+                            <span><i class="bi bi-person-circle"></i> Emily Rodriguez</span>
+                            <a href="#contact" class="btn tour-btn">Schedule Tour</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- PROPERTY 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="property-card">
+
+                    <div class="property-image">
+                        <img src="./Images/featured-properties-img-3.png"
+                            alt="Suburban family house">
+
+                        <span class="property-badge orange">Price Drop</span>
+
+                        <div class="favorite-btn">
+                            <i class="bi bi-heart"></i>
+                        </div>
+
+                        <span class="photo-count">
+                            <i class="bi bi-camera-fill"></i> 32 Photos
+                        </span>
+                    </div>
+
+                    <div class="property-info">
+                        <div class="property-price"><h4>$875,000</h4><span class="old-price">$925,000</span><span class="discount-tag">5% OFF</span></div>
+                        <p>5 beds • 4 baths • 3,845 sqft</p>
+                        <h6>Family Suburban Home</h6>
+                        <p>456 Oak Tree Lane, Austin, TX</p>
+
+                        <div class="property-bottom">
+                            <span><i class="bi bi-person-circle"></i> Michael Chen</span>
+                            <a href="#contact" class="btn tour-btn">Schedule Tour</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+            <a href="#contact" class="btn main-btn">
+                View All Properties <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- SERVICES -->
+<section class="section-padding" id="services">
+    <div class="container">
+
+        <div class="section-heading text-center">
+            <span class="small-title">WHAT WE OFFER</span>
+            <h2>Our Services</h2>
+            <p>Comprehensive real estate solutions tailored to your needs</p>
+        </div>
+
+        <div class="services-switcher">
+            <input type="radio" name="service-choice" id="service-buying" checked>
+            <input type="radio" name="service-choice" id="service-selling">
+            <input type="radio" name="service-choice" id="service-renting">
+            <input type="radio" name="service-choice" id="service-investing">
+            <input type="radio" name="service-choice" id="service-commercial">
+
+            <div class="service-tabs text-center" role="tablist" aria-label="Our services">
+                <label class="service-tab" for="service-buying"><i class="bi bi-house-fill"></i> Buying</label>
+                <label class="service-tab" for="service-selling"><i class="bi bi-currency-dollar"></i> Selling</label>
+                <label class="service-tab" for="service-renting"><i class="bi bi-key-fill"></i> Renting</label>
+                <label class="service-tab" for="service-investing"><i class="bi bi-bar-chart-steps"></i> Investing</label>
+                <label class="service-tab" for="service-commercial"><i class="bi bi-building-fill"></i> Commercial</label>
+            </div>
+
+            <div class="service-panels">
+                <article class="service-panel panel-buying">
+                    <div class="row align-items-center mt-4">
+                        <div class="col-md-6">
+                            <h3>Home Buying Made Simple</h3>
+                            <p class="service-description">Our expert team guides you through every step of the home buying process, from initial search to closing day.</p>
+                            <div class="service-item"><i class="bi bi-search"></i><div><h5>Property Search</h5><p>Access exclusive listings and find properties that match your criteria.</p></div></div>
+                            <div class="service-item"><i class="bi bi-calculator"></i><div><h5>Financial Planning</h5><p>Understand your budget and explore mortgage options with our experts.</p></div></div>
+                            <div class="service-item"><i class="bi bi-handshake"></i><div><h5>Negotiation Support</h5><p>Our team helps you get the best possible deal on your dream home.</p></div></div>
+                            <a href="#contact" class="btn main-btn mt-3">Start Your Search</a>
+                        </div>
+                        <div class="col-md-6 mt-4 mt-md-0"><img class="service-image" src="./Images/service-img-1.webp" alt="Beautiful family home"><div class="success-box"><h4>98%</h4><p>Success Rate</p></div></div>
+                    </div>
+                </article>
+                <article class="service-panel panel-selling">
+                    <div class="row align-items-center mt-4"><div class="col-md-6"><h3>Maximize Your Home's Value</h3><p class="service-description">Sell your property quickly and for the best price with our comprehensive marketing strategy and expert guidance.</p>
+                        <div class="service-item"><i class="bi bi-graph-up"></i><div><h5>Market Analysis</h5><p>Get a comprehensive market analysis to price your home competitively..</p></div></div>
+                        <div class="service-item"><i class="bi bi-camera-fill"></i><div><h5>Professional Marketing</h5><p>High-quality photography, virtual tours, and multi-channel marketing campaigns.</p></div></div>
+                        <div class="service-item"><i class="bi bi-people-fill"></i><div><h5>Buyer Screening</h5><p>We pre-qualify buyers to ensure serious inquiries and smooth transactions.</p></div></div><a href="#contact" class="btn main-btn mt-3">Get Home Valution</a></div>
+                        <div class="col-md-6 mt-4 mt-md-0"><img class="service-image" src="./Images/service-img-2.webp" alt="Luxury home ready for sale"><div class="success-box"><h4>21 days</h4><p>Avg. Time to Sell </p></div></div></div>
+                </article>
+                <article class="service-panel panel-renting">
+                    <div class="row align-items-center mt-4"><div class="col-md-6"><h3>Premium Rental Properties</h3><p class="service-description">Find your perfect rental home with our extensive portfolio of quality properties and personalized service.</p>
+                        <div class="service-item"><i class="bi bi-map"></i><div><h5>Prime Locations</h5><p>Access rentals in the most desirable neighborhoods and communities.</p></div></div>
+                        <div class="service-item"><i class="bi bi-shield-shaded"></i><div><h5>Verified Properties</h5><p>All our rental properties are thoroughly inspected and verified for quality.</p></div></div>
+                        <div class="service-item"><i class="bi bi-tools"></i><div><h5>24/7 Support</h5><p>Round-the-clock maintenance and tenant support services.</p></div></div><a href="#contact" class="btn main-btn mt-3">Browse Rentals</a></div>
+                        <div class="col-md-6 mt-4 mt-md-0"><img class="service-image" src="./Images/service-img-3.webp" alt="Welcoming rental home"><div class="success-box"><h4>5,000+</h4><p>Available Rentals</p></div></div></div>
+                </article>
+                <article class="service-panel panel-investing">
+                    <div class="row align-items-center mt-4"><div class="col-md-6"><h3>Real Estate Investment</h3><p class="service-description">Build wealth through strategic real estate investments with our expert guidance and market insights.</p>
+                        <div class="service-item"><i class="bi bi-pie-chart-fill"></i><div><h5>Portfolio Analysis</h5><p>Comprehensive analysis of investment opportunities and portfolio optimization.</p></div></div>
+                        <div class="service-item"><i class="bi bi-cash"></i><div><h5>ROI Projections</h5><p>Detailed return on investment calculations and market forecasting.</p></div></div>
+                        <div class="service-item"><i class="bi bi-gear-fill"></i><div><h5>Property Management</h5><p>Full-service property management for hands-off investment experience</p></div></div><a href="#contact" class="btn main-btn mt-3">Explore Investment</a></div>
+                        <div class="col-md-6 mt-4 mt-md-0"><img class="service-image" src="./Images/service-img-4.png" alt="Modern investment property"><div class="success-box"><h4>15%</h4><p>Avg. Annual ROI</p></div></div></div>
+                </article>
+                <article class="service-panel panel-commercial">
+                    <div class="row align-items-center mt-4"><div class="col-md-6"><h3>Commercial Real Estate</h3><p class="service-description">Expert commercial real estate services for businesses, investors, and developers.</p>
+                        <div class="service-item"><i class="bi bi-building-fill"></i> <div><h5>Office Spaces</h5><p>Prime office locations for businesses of all sizes and industries.</p></div></div>
+                        <div class="service-item"><i class="bi bi-clipboard-data"></i><div><h5>Industrial Properties</h5><p>Warehouses, manufacturing facilities, and distribution centers.</p></div></div>
+                        <div class="service-item"><i class="bi bi-buildings-fill"></i><div><h5>Retail Spaces</h5><p>High-traffic retail locations and shopping center opportunities.</p></div></div><a href="#contact" class="btn main-btn mt-3">View Commercial Properties</a></div>
+                        <div class="col-md-6 mt-4 mt-md-0"><img class="service-image" src="./Images/service-img-5.png" alt="Modern commercial office"><div class="success-box"><h4>$2.5B</h4><p>Commercial Volume</p></div></div></div>
+                </article>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- TESTIMONIALS -->
+<section class="testimonials section-padding" id="testimonials">
+    <div class="container">
+        <div class="section-heading text-center">
+            <span class="small-title">CLIENT STORIES</span>
+            <h2>What Our Clients Say</h2>
+            <p>Hear from satisfied homeowners who found their dream properties with EliteHomes</p>
+        </div>
+
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Review 1"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Review 2"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Review 3"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3" aria-label="Review 4"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <article class="testimonial-card mx-auto">
+                        <div class="stars">★★★★★ <span>5.0 out of 5</span></div>
+                        <p>"Selling our Manhattan penthouse was stress-free thanks to EliteHomes. They marketed it beautifully, brought qualified buyers, and we sold for 15% above asking price in just 10 days. Their professional photography and staging made all the difference."</p>
+                        <div class="d-flex align-items-center mt-4">
+                            <img src="./Images/avatar-2.jpg" alt="Amanda Chen">
+                            <div class="ms-3"><h6>Amanda Chen</h6><small>Manhattan Seller Sold $3.2M Penthouse</small></div>
+                        </div>
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <article class="testimonial-card mx-auto">
+                        <div class="stars">★★★★★ <span>5.0 out of 5</span></div>
+                        <p>Our company needed to relocate to a larger office space quickly. EliteHomes' commercial team found us the perfect building in downtown Austin with flexible lease terms and great amenities. They handled everything professionally and efficiently."</p>
+                        <div class="d-flex align-items-center mt-4">
+                            <img src="./Images/avatar-3.jpg" alt="Michael Foster">
+                            <div class="ms-3"><h6>Michael Foster</h6><small>CEO, TechStart Inc.15,000 sq ft Office Lease</small></div>
+                        </div>
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <article class="testimonial-card mx-auto">
+                        <div class="stars">★★★★★ <span>5.0 out of 5</span></div>
+                        <p>"EliteHomes made our home buying experience absolutely seamless. Sarah and her team went above and beyond to help us find the perfect family home in Beverly Hills. Their market knowledge and negotiation skills saved us over $100,000 on our purchase. We couldn't be happier!"</p>
+                        <div class="d-flex align-items-center mt-4">
+                            <img src="./Images/avatar-4.jpg" alt="Sophia Williams">
+                            <div class="ms-3"><h6>Sophia Williams</h6><small>Beverly Hills Homeowners Purchased $2.8M Family Estate</small></div>
+                        </div>
+                    </article>
+                </div>
+                <div class="carousel-item">
+                    <article class="testimonial-card mx-auto">
+                        <div class="stars">★★★★★ <span>5.0 out of 5</span></div>
+                        <p>"As first-time investors, we were nervous about entering the real estate market. The EliteHomes investment team provided incredible guidance and helped us build a portfolio that's already generating 18% annual returns. Their expertise is unmatched."</p>
+                        <div class="d-flex align-items-center mt-4">
+                            <img src="./Images/avatar-1.jpg" alt="James Carter">
+                            <div class="ms-3"><h6>David Rodriguez</h6><small>Real Estate Investor $1.2M Investment Portfolio</small></div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+
+<!-- FAQ -->
+<section class="section-padding" id="faq">
+    <div class="container">
+
+        <div class="section-heading text-center">
+            <span class="small-title">HELP CENTER</span>
+            <h2>Frequently Asked Questions</h2>
+            <p>Get answers to the most common questions about buying and selling homes.</p>
+        </div>
+
+        <div class="faq-container">
+
+            <details class="faq-item" open>
+                <summary>How do I know if I'm ready to buy a home?</summary>
+                <p>
+                    You're ready when you have stable income, savings for a down payment,
+                    and a clear idea of your future plans.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>What's the best time of year to sell my home?</summary>
+                <p>
+                    Spring and early summer are often popular times for selling properties.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>How much should I offer on a house?</summary>
+                <p>
+                    Your offer depends on the property's value, condition, and the local market.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>What are closing costs and who pays them?</summary>
+                <p>
+                    Closing costs are additional expenses involved in completing
+                    a property transaction.
+                </p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Should I get a home inspection?</summary>
+                <p>
+                    A home inspection helps you discover potential problems
+                    before completing your purchase.
+                </p>
+            </details>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact-section section-padding" id="contact">
+    <div class="container">
+        <div class="section-heading text-center">
+            <span class="small-title">CONTACT US</span>
+            <h2 class="contact-title">Get In Touch</h2>
+            <p>Ready to start your real estate journey? Our expert team is here to help you every step of the way</p>
+        </div>
+
+        <!-- Quick contact methods -->
+        <div class="row g-4 contact-methods">
+            <div class="col-sm-6 col-lg-3">
+                <div class="contact-method-card">
+                    <span class="contact-method-icon purple"><i class="bi bi-telephone-fill"></i></span>
+                    <h5>Call Us</h5>
+                    <p>Mon-Fri from 8am to 5pm</p>
+                    <a href="tel:+15551234567">+1 (555) 123-4567</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="contact-method-card">
+                    <span class="contact-method-icon violet"><i class="bi bi-envelope-fill"></i></span>
+                    <h5>Email Us</h5>
+                    <p>We'll respond within 24hrs</p>
+                    <a href="mailto:info@elitehomes.com">info@elitehomes.com</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="contact-method-card">
+                    <span class="contact-method-icon pink"><i class="bi bi-geo-alt-fill"></i></span>
+                    <h5>Visit Us</h5>
+                    <p>Come say hello</p>
+                    <a href="#contact-details">Beverly Hills, CA</a>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="contact-method-card">
+                    <span class="contact-method-icon blue"><i class="bi bi-chat-dots-fill"></i></span>
+                    <h5>Live Chat</h5>
+                    <p>Available 24/7</p>
+                    <a href="mailto:support@elitehomes.com">Start chatting <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact information and message form -->
+        <div class="row g-4 contact-details-row" id="contact-details">
+            <div class="col-lg-4">
+                <div class="contact-side-column">
+                    <div class="contact-info contact-info-panel">
+                        <h3>Contact Information</h3>
+                        <div class="contact-item">
+                            <span class="contact-info-icon"><i class="bi bi-geo-alt-fill"></i></span>
+                            <div><h6>Address</h6><p>1234 Luxury Boulevard<br>Beverly Hills, CA 90210</p></div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-info-icon"><i class="bi bi-telephone-fill"></i></span>
+                            <div><h6>Phone</h6><p><a href="tel:+15551234567">+1 (555) 123-4567</a><br><a href="tel:+15559876543">+1 (555) 987-6543</a></p></div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-info-icon email-icon"><i class="bi bi-envelope-fill"></i></span>
+                            <div><h6>Email</h6><p><a href="mailto:info@elitehomes.com">info@elitehomes.com</a><br><a href="mailto:support@elitehomes.com">support@elitehomes.com</a></p></div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-info-icon"><i class="bi bi-clock-fill"></i></span>
+                            <div><h6>Working Hours</h6><p>Mon-Fri: 8:00 AM - 8:00 PM<br>Sat-Sun: 9:00 AM - 6:00 PM</p></div>
+                        </div>
+                    </div>
+                    <div class="connect-card">
+                        <h4>Connect With Us</h4>
+                        <p>Follow us on social media for updates and insights</p>
+                        <div class="social-links">
+                            <a href="https://facebook.com" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="https://twitter.com" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="https://instagram.com" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="https://linkedin.com" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                            <a href="https://youtube.com" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8">
+                <form class="contact-form contact-form-panel" action="mailto:info@elitehomes.com" method="post" enctype="text/plain">
+                    <h3>Send us a message</h3>
+                    <p class="form-intro">Fill out the form below and we'll get back to you as soon as possible</p>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label class="form-label" for="firstName">First Name <span>*</span></label>
+                            <input id="firstName" name="First name" type="text" class="form-control" placeholder="John" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="lastName">Last Name <span>*</span></label>
+                            <input id="lastName" name="Last name" type="text" class="form-control" placeholder="Doe" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="emailAddress">Email Address <span>*</span></label>
+                            <input id="emailAddress" name="Email" type="email" class="form-control" placeholder="john@example.com" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="form-label" for="phoneNumber">Phone Number</label>
+                            <input id="phoneNumber" name="Phone" type="tel" class="form-control" placeholder="+1 (555) 000-0000">
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label" for="serviceInterest">I'm interested in</label>
+                            <select id="serviceInterest" name="Interested in" class="form-select">
+                                <option value="">Select a service</option>
+                                <option>Buying a property</option>
+                                <option>Selling a property</option>
+                                <option>Renting a property</option>
+                                <option>Property investment</option>
+                                <option>Commercial real estate</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="col-12">
+                            <label class="form-label" for="message">Your Message <span>*</span></label>
+                            <textarea id="message" name="Message" class="form-control" rows="5" placeholder="Tell us about your real estate needs..." required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <label class="marketing-consent"><input type="checkbox" name="Marketing consent"> <span>I agree to receive marketing communications and updates from EliteHomes</span></label>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn main-btn w-100">Send Message <i class="bi bi-send-fill ms-2"></i></button>
+                            <p class="privacy-note">We respect your privacy. Your information will never be shared.</p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-main">
+            <a class="footer-brand" href="#home">EliteHomes</a>
+            <p class="footer-copyright">© 2025 EliteHomes. All rights reserved.</p>
+            <div class="footer-socials">
+                <a href="https://facebook.com" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://twitter.com" aria-label="Twitter"><i class="bi bi-twitter"></i></a>
+                <a href="https://instagram.com" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                <a href="https://linkedin.com" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">Made with <i class="bi bi-heart-fill"></i> for finding your dream home</div>
+    </div>
+</footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
